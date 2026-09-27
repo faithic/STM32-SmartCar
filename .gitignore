@@ -1,0 +1,27 @@
+# Keil MDK build output
+Objects/
+Listings/
+*.uvguix.*
+*.uvgui.*
+*.bak
+*.bak2
+*.build_log.htm
+*.dep
+*.map
+*.hex
+*.axf
+*.bin
+*.crf
+*.o
+*.d
+*.lnp
+*.sct
+*.lst
+
+# Build logs
+build_*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
