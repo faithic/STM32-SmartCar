@@ -669,21 +669,13 @@
         <Group>
           <GroupName>Hardware</GroupName>
           <Files>
-            <File>
-              <FileName>LED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\LED.c</FilePath>
-            </File>
+
             <File>
               <FileName>LED.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\LED.h</FilePath>
             </File>
-            <File>
-              <FileName>Key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Key.c</FilePath>
-            </File>
+
             <File>
               <FileName>Key.h</FileName>
               <FileType>5</FileType>
@@ -704,21 +696,13 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\OLED_Font.h</FilePath>
             </File>
-            <File>
-              <FileName>Buzzer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Buzzer.c</FilePath>
-            </File>
+
             <File>
               <FileName>Buzzer.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Buzzer.h</FilePath>
             </File>
-            <File>
-              <FileName>BT.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\BT.c</FilePath>
-            </File>
+
             <File>
               <FileName>BT.h</FileName>
               <FileType>5</FileType>
@@ -794,41 +778,25 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Control.h</FilePath>
             </File>
-            <File>
-              <FileName>Gray.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Gray.c</FilePath>
-            </File>
+
             <File>
               <FileName>Gray.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Gray.h</FilePath>
             </File>
-            <File>
-              <FileName>ADC_DMA.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\ADC_DMA.c</FilePath>
-            </File>
+
             <File>
               <FileName>ADC_DMA.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\ADC_DMA.h</FilePath>
             </File>
-            <File>
-              <FileName>Servo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Servo.c</FilePath>
-            </File>
+
             <File>
               <FileName>Servo.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Servo.h</FilePath>
             </File>
-            <File>
-              <FileName>HCSR04.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\HCSR04.c</FilePath>
-            </File>
+
             <File>
               <FileName>HCSR04.h</FileName>
               <FileType>5</FileType>
@@ -863,6 +831,16 @@
               <FileName>Serial_Printf.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Serial_Printf.h</FilePath>
+            </File>
+            <File>
+              <FileName>AnglePID.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\AnglePID.c</FilePath>
+            </File>
+            <File>
+              <FileName>AnglePID.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\AnglePID.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -902,3 +880,5 @@
   </RTE>
 
 </Project>
+
+

@@ -41,8 +41,6 @@ int App_MPU6050_Calibrate(uint16_t samples);
 void App_MPU6050_UpdateAngle(float dt);
 
 // 主循环用：内部自动测量时间间隔，不要在中断里调用
-// 【小车工程上已停用】TIM4 的 20ms 中断里已经在调 UpdateAngle(0.02f) 积分了，
-// 主循环再调这个就是两个积分者，角度会长成两倍速。只留给"中断没跑"的台面测试用。
 void App_MPU6050_UpdateAngleAuto(void);
 
 // 获取Z轴累计角度，单位°，范围±180

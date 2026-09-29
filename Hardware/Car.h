@@ -1,26 +1,37 @@
 #ifndef _CAR_H
 #define _CAR_H
+
+#include "stm32f10x.h"
 #include "PWM.h"
 #include "Motor.h"
-//Car³õÊ¼»¯º¯Êı
+
+// Caråˆå§‹åŒ–å‡½æ•°
 void Car_Init(void);
-//ÔË¶¯Ö¸Áî
-void Car_Move(int16_t LeftTarget,int16_t RightTarget);
-//ÂıËÙÏòÇ°
-void Go_Forward_Slowly(void);
-//Õı³£ÏòÇ°
-void Go_Forward_Normally(void);
-//¿ìËÙÏòÇ°
-void Go_Forward_Quickly(void);
-//ºóÍË
-void Back_Off(void);
-//×ó×ª
-void Turn_Left(void);
-//ÓÒ×ª
-void Turn_Right(void);
-//Í£Ö¹
+// åœæ­¢
 void Car_Stop(void);
-//Ô­µØ×Ô×ª
+// åŸºç¡€å¼€ç¯/è®¾å®šé€Ÿåº¦è¿åŠ¨æŒ‡ä»¤
+void Car_Move(int16_t LeftTarget, int16_t RightTarget);
+
+// æ…¢é€Ÿå‘å‰
+void Go_Forward_Slowly(void);
+// æ­£å¸¸å‘å‰
+void Go_Forward_Normally(void);
+// å¿«é€Ÿå‘å‰
+void Go_Forward_Quickly(void);
+// åé€€
+void Back_Off(void);
+// å¼€ç¯å·®é€Ÿå·¦è½¬
+void Turn_Left(void);
+// å¼€ç¯å·®é€Ÿå³è½¬
+void Turn_Right(void);
+// åŸåœ°è‡ªè½¬
 void Car_SpinLeft(void);
 void Car_SpinRight(void);
+
+// ================= èˆªå‘è§’åŒé—­ç¯é«˜çº§æ§åˆ¶æ¥å£ =================
+void Turn_To_Angle(float target_angle);
+void Turn_Left_90(void);
+void Turn_Right_90(void);
+void Car_DriveStraight(float base_speed, float target_yaw);
+
 #endif

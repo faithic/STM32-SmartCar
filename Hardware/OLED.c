@@ -2,12 +2,8 @@
 #include "OLED_Font.h"
 
 /*引脚配置*/
-/* 2026-09-25：由 PB5/PB7 改到 PA2/PA3。
-   PA4/PA5 留给 MPU6050 的软件 I2C（以后 VL53L1X 也挂这条传感器总线），
-   OLED 单独走一条线——本文件这套软件 I2C 没有 ACK 处理也没有读函数，
-   和 SoftI2C.c 混在同一条总线上会互相打架。
-   软件模拟 I2C 不挑引脚，任意两个 GPIO 配成开漏都能跑。
-   接线约定：SCL = PA2，SDA = PA3。接反了屏不亮，把下面两行的引脚号对调即可。 */
+/* 2026-09-25：由 PB5/PB7 改到 PA2/PA3
+   接线约定：SCL = PA2，SDA = PA3 */
 #define OLED_W_SCL(x)		GPIO_WriteBit(GPIOA, GPIO_Pin_2, (BitAction)(x))
 #define OLED_W_SDA(x)		GPIO_WriteBit(GPIOA, GPIO_Pin_3, (BitAction)(x))
 
